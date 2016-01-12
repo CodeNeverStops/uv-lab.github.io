@@ -25,17 +25,20 @@
 
 &lt;p&gt;&lt;img src=&#34;https://camo.githubusercontent.com/3c58da05b4e3ccf2f717007c4d1c0bee415d670d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622d63736578746f6e2f756e6974652d30312e676966&#34; alt=&#34;演示图&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;一顿眼花缭乱之后，这个插件的查找源是以下三种:
-&amp;gt; * :Unite buffer
-在buffer中查找
-&amp;gt; * :Unite file
-在当前目录的文件列表中查找
-&amp;gt; * :Unite file_rec
-在当前目录的所有递归子目录中的所有文件中查找&lt;/p&gt;
+&lt;p&gt;一顿眼花缭乱之后，这个插件的查找源是以下三种:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在buffer中查找
+:Unite buffer&lt;/li&gt;
+&lt;li&gt;在当前目录的文件列表中查找
+:Unite file&lt;/li&gt;
+&lt;li&gt;在当前目录的所有递归子目录中的所有文件中查找
+:Unite file_rec&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;按键有点多，我们mapping一下，下面附上我的mapping&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;nnoremap &amp;lt;leader&amp;gt;b :Unite buffer&amp;lt;cr&amp;gt;
+&lt;pre&gt;&lt;code&gt;nnoremap &amp;lt;leader&amp;gt;b :Unite buffer&amp;lt;cr&amp;gt;
 nnoremap &amp;lt;leader&amp;gt;f :Unite file&amp;lt;cr&amp;gt;
 nnoremap &amp;lt;leader&amp;gt;fr :Unite file_rec&amp;lt;cr&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -51,9 +54,9 @@ nnoremap &amp;lt;leader&amp;gt;fr :Unite file_rec&amp;lt;cr&amp;gt;
 
 &lt;h2 id=&#34;install-unite-vim:3699ac25da16825567b3749371f7d974&#34;&gt;Install Unite.vim&lt;/h2&gt;
 
-&lt;p&gt;下面是利用Vundle.vim来安装Unite.vim的配置&lt;/p&gt;
+&lt;p&gt;在.vimrc中加入以下配置项，利用Vundle.vim来安装Unite.vim的配置&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;Plugin &#39;Shougo/unite.vim&#39;
+&lt;pre&gt;&lt;code&gt;Plugin &#39;Shougo/unite.vim&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;然后输入:PluginInstall，Vundle会自动安装Unite&lt;/p&gt;
