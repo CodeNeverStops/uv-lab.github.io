@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Write the code, Change the world</title>
+    <link>http://uv-lab.github.io/tags/vim/</link>
+    <description>Recent content in Vim on Write the code, Change the world</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://uv-lab.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unite.vim:一个用于快速查找的vim插件</title>
+      <link>http://uv-lab.github.io/post/unite.vim/</link>
+      <pubDate>Tue, 12 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://uv-lab.github.io/post/unite.vim/</guid>
+      <description>
+
+&lt;p&gt;你是否已经厌倦了开多个tab来回切换，尤其是开了十几个tab后，每次眼睛扫描的压力徒增，而且效率底下。&lt;/p&gt;
+
+&lt;p&gt;Unite.vim让使用少量tab快速编辑大量文件成为可能。&lt;/p&gt;
+
+&lt;p&gt;我们先放上一张官方的图演示一下使用效果&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://camo.githubusercontent.com/3c58da05b4e3ccf2f717007c4d1c0bee415d670d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622d63736578746f6e2f756e6974652d30312e676966&#34; alt=&#34;演示图&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一顿眼花缭乱之后，这个插件的查找源是以下三种:
+&amp;gt; * :Unite buffer
+在buffer中查找
+&amp;gt; * :Unite file
+在当前目录的文件列表中查找
+&amp;gt; * :Unite file_rec
+在当前目录的所有递归子目录中的所有文件中查找&lt;/p&gt;
+
+&lt;p&gt;按键有点多，我们mapping一下，下面附上我的mapping&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;nnoremap &amp;lt;leader&amp;gt;b :Unite buffer&amp;lt;cr&amp;gt;
+nnoremap &amp;lt;leader&amp;gt;f :Unite file&amp;lt;cr&amp;gt;
+nnoremap &amp;lt;leader&amp;gt;fr :Unite file_rec&amp;lt;cr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;结果集列出来以后，可以进入insert模式，输入关键字，Unite会自动筛选出包含关键字的buffer或者文件&lt;/li&gt;
+&lt;li&gt;进入normal模式后，可以用jk来上下移动光标到指定的文件，按下a可以列出一个操作列表，同样用jk来移动光标到指定的操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;install-unite-vim:3699ac25da16825567b3749371f7d974&#34;&gt;Install Unite.vim&lt;/h2&gt;
+
+&lt;p&gt;下面是利用Vundle.vim来安装Unite.vim的配置&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-vim&#34;&gt;Plugin &#39;Shougo/unite.vim&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后输入:PluginInstall，Vundle会自动安装Unite&lt;/p&gt;
+
+&lt;p&gt;Vundle.vim是一个管理vim插件的vim插件，安装配置自行查阅&lt;a href=&#34;https://github.com/gmarik/Vundle.vim&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
